@@ -1,5 +1,8 @@
-const testBtn = document.getElementById("testBtn");
+const button = document.getElementById("testBtn");
+const input = document.getElementById("numberInput");
+const result = document.getElementById("result");
 
-testBtn.addEventListener("click", function () {
-  alert("Your finance tool is working");
+button.addEventListener("click", function () {
+  const value = input.value;
+  result.textContent = "You entered: " + value;
 });
