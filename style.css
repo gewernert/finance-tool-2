@@ -6,10 +6,31 @@ body {
   color: #1f2937;
 }
 
+.app {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 h1 {
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.card {
+  background-color: white;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
   margin-top: 0;
 }
 
-p {
-  font-size: 18px;
+button {
+  padding: 10px 16px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
 }
