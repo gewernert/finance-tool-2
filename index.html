@@ -15,12 +15,37 @@
   <p>This is my first live tool update.</p>
   <input id="numberInput" type="number" placeholder="Enter a number" />
   <button id="testBtn">Show Number</button>
+  <button id="simpleTestBtn">Test Button (Click Me!)</button>
 
   <div id="result"></div>
 </div>
 
   </div>
 
+  <!-- Success Modal Popup -->
+  <div id="successModal" class="modal">
+    <div class="modal-content">
+      <h2 id="modalTitle">Success!</h2>
+      <p id="modalMessage">Your number has been saved!</p>
+      <button id="closeModalBtn" class="close-btn">Close</button>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.0/dist/confetti.browser.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+<script>
+const firebaseConfig = {
+  apiKey: "AIzaSyB7N8LcnkdmEZJnfebvtf37AHm4uDUSD8s",
+  authDomain: "finance-tool-2.firebaseapp.com",
+  projectId: "finance-tool-2",
+  storageBucket: "finance-tool-2.firebasestorage.app",
+  messagingSenderId: "856144960398",
+  appId: "1:856144960398:web:52214c087f4c9e9c3ba2df"
+};
+
+firebase.initializeApp(firebaseConfig);
+const db = firebase.firestore();
+</script>
   <script src="app.js"></script>
 </body>
 </html>
